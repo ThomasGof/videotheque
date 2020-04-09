@@ -99,7 +99,7 @@ Cet exercice nécéssitera plusieurs jour pour déployer notre site.
     Ces fiches devront êtres stoquées dans une table temporaire crée par vous-même à cet effet et ne devront 
     pas apparaître dans la liste de la table movies_full.
 
-8. Sur la page user_ref.php :
+8. Sur la page admin.php :
     Dans la table users vous devrez créer un utilisateur dont le role sera "admin".
     Ce dernier aura accès à une liste de tous les utilisateurs et pourra :
     - changer leur role en admin ou contributor.

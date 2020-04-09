@@ -1,6 +1,7 @@
 <?php
 class Nav {
     public static function displayNav(){
+        // skdhfksqhfksqfh
         session_start();
         if(isset($_GET['deconnect']) && $_GET['deconnect']){
             $_SESSION = [];

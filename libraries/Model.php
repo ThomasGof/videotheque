@@ -17,5 +17,15 @@ abstract class Model {
         $rq = $pdo->prepare("INSERT INTO $table($champ) VALUES($prepValues)");
         $rq->execute($values);
     }
+    public static function delete(){
+
+    }
+    // UPDATE users (id_users,role) VALUES (?,?) [$id_users,$role]
+    // Model::update('users','id_users,role','?,?',[$_POST['id_users'],$_POST['role']]," WHERE id_users=".$_POST['role']);
+    public static function update($table,$champ,$prepValues,$values,$where){
+        require "pdo.php";
+        $rq = $pdo->prepare("UPDATE $table($champ) VALUES($prepValues) $where");
+        $rq->execute($values);
+    }
 
 }
